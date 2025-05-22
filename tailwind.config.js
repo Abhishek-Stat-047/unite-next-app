@@ -138,13 +138,25 @@ const config = {
     },
   },
   darkMode: "class",
-  plugins: [heroui({
+  plugins: [
+    heroui({
       defaultTheme: "light",
       defaultExtendTheme: "light",
       themes: {
         light: {
           colors: {
-            primary: {},
+            primary: {
+              50: "#fcf9ed", // Light
+              100: "#faf5e4", // Light :hover
+              200: "#f5ebc7", // Light :active
+              300: "#dfbe49", // Normal
+              400: "#c9ab42", // Normal :hover
+              500: "#b2983a", // Normal :active
+              600: "#a78737", // Dark
+              700: "#866c2c", // Dark :hover
+              800: "#6d4221", // Dark :active
+              900: "#4e421a", // Darker
+            },
             secondary: {},
             success: {},
             danger: {},
@@ -152,7 +164,8 @@ const config = {
           },
         },
       },
-    })],
+    }),
+  ],
 };
 
 module.exports = config;

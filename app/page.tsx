@@ -1,5 +1,11 @@
 "use client";
 
+import Banner from "@/components/section/Banner";
+
 export default function Home() {
-    return <main>Main app</main>;
+  return (
+    <main>
+      <Banner />
+    </main>
+  );
 }

@@ -1,15 +1,23 @@
 import type { NextConfig } from "next";
-import NextBundleAnalyzer from "@next/bundle-analyzer";
 
-const withBundleAnalyzer = NextBundleAnalyzer({
-    enabled: process.env.ANALYZE === "true",
-});
 const nextConfig: NextConfig = {
-    turbopack: {},
-    images: {
-        dangerouslyAllowSVG: true,
-    },
-    distDir: process.env.OUTPUT_DIR || ".next",
+  turbopack: {},
+  images: {
+    dangerouslyAllowSVG: true,
+  },
+  distDir: process.env.OUTPUT_DIR || ".next",
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
+// Only apply bundle analyzer when explicitly enabled
+// This prevents webpack from being loaded when using Turbopack
+let configWithAnalyzer = nextConfig;
+
+if (process.env.ANALYZE === "true") {
+  const withBundleAnalyzer = require("@next/bundle-analyzer")({
+    enabled: true,
+  });
+
+  configWithAnalyzer = withBundleAnalyzer(nextConfig);
+}
+
+module.exports = configWithAnalyzer;
