@@ -9,3 +9,9 @@ export type HeadingSegments = {
   color?: string;
 };
 
+export type ETLFeatureType = {
+  image: string;
+  alt: string;
+  heading: string;
+  description: string;
+};

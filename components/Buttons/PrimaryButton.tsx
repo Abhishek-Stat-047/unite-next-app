@@ -16,7 +16,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
       className={clsx(
         variant === "solid"
           ? "bg-[#3B6ED3] hover:bg-[#3B6ED3] text-white font-bold px-5"
-          : "border bg-white border-[#1E4BA4] text-[#1E4BA4] hover:bg-[#3B6ED3] hover:text-white font-bold px-5",
+          : "border bg-white border-[#1E4BA4] text-primaryBlue-300 hover:bg-[#3B6ED3] hover:text-white   px-5",
         "rounded-full",
         className
       )}

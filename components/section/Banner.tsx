@@ -1,17 +1,21 @@
 import React from "react";
+import Image from "next/image";
 
 import ColoredText from "../common/ColoredText";
 import Typography from "../common/Typography";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import DataHub from "../dataHub/DataHub";
 
+import { Background } from "@/public";
+
 const Banner = () => {
   return (
-    <div className=" mt-20 ">
+    <div className="">
+      <Image alt="back" className="absolute right-0 -top-32" src={Background} />
       <div className="w-full  flex justify-between">
-        <div>
+        <div className="z-10 mt-20">
           <ColoredText
-            className="mb-2"
+            className="mb-2  !leading-tight"
             segments={[
               {
                 text: "Move data from sources \n to destinations in \n",
@@ -20,16 +24,25 @@ const Banner = () => {
               { text: " Minutes", color: "text-secondaryBlue-300" },
             ]}
           />
-          <Typography className="mb-4" variant="normal">
+          <Typography className="mb-4 " variant="text">
             A No-Code ETL Tool by Statfinity
           </Typography>
-          <div className="flex gap-4">
-            <PrimaryButton variant="solid">Get started for free</PrimaryButton>
-            <PrimaryButton variant="bordered">Book a Demo</PrimaryButton>
+          <div className="flex gap-4 mt-10">
+            <PrimaryButton className="px-10 py-6" variant="solid">
+              Get started for free
+            </PrimaryButton>
+            <PrimaryButton className="px-16 py-6" variant="bordered">
+              Book a Demo
+            </PrimaryButton>
           </div>
-          <Typography variant="normal">No Credit Card Required! 🎉</Typography>
+          <Typography
+            className="!text-xs !text-primaryBlue-300 mt-5 ml-5"
+            variant="text"
+          >
+            No Credit Card Required! 🎉
+          </Typography>
         </div>
-        <div>
+        <div className="">
           <DataHub />
         </div>
       </div>

@@ -4,6 +4,8 @@ export type Variants =
   | "heading"
   | "heading2"
   | "subheading"
+  | "text"
+  | "text-semibold"
   | "body"
   | "subtitle"
   | "normal"
@@ -31,10 +33,12 @@ type ComponentRenderedProps = {
 const light = {
   baseStyles: "text-foreground-200",
   variantStyles: {
-    heading: "text-4xl font-bold leading-tight md:text-5xl",
-    heading2: "text-3xl font-semibold leading-tight md:text-4xl",
-    subheading: "text-2xl font-semibold leading-snug md:text-3xl",
-    body: "text-md [&]:leading-loose md:text-lg",
+    heading: "text-4xl font-extrabold leading-tight md:text-5xl", // main heading
+    heading2: "text-xl font-semibold leading-tight md:text-2xl tracking-[4px]", // Title
+    subheading: "font-semibold leading-snug md:text-sm", // sub heading
+    "text-semibold": "font-semibold text-sm", // text
+    text: "text-sm", // text
+    body: "text-sm",
     "body-light": "text-md [&]:leading-loose md:text-lg font-normal",
     subtitle:
       "text-lg font-medium text-foreground-300 md:text-2xl [&]:leading-loose",
@@ -50,9 +54,11 @@ const light = {
 const dark = {
   baseStyles: "text-slate-800 dark:text-slate-200",
   variantStyles: {
-    heading: "text-4xl font-bold leading-tight md:text-5xl",
-    heading2: "text-3xl font-semibold leading-tight md:text-4xl",
-    subheading: "text-2xl font-semibold leading-snug md:text-3xl",
+    heading: "text-4xl font-extrabold leading-tight md:text-5xl", // main heading
+    heading2: "text-xl font-semibold leading-tight md:text-2xl tracking-[4px]", // Title
+    subheading: "font-semibold leading-snug text-base", // sub heading
+    "text-semibold": "font-semibold text-sm", // text
+    text: "text-base text-gray-900", // text
     subtitle:
       "text-lg font-medium text-slate-700 dark:text-slate-400 md:text-2xl",
     body: "text-md [&]:leading-loose md:text-lg",

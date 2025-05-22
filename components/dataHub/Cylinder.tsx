@@ -14,11 +14,11 @@ const Cylinder = ({ image, alt }: CylinderProps) => {
           {/* <GradientTriangle /> */}
           <div className="relative w-[140px] h-[90px] overflow-hidden">
             <div
-              className="absolute inset-0"
+              className="absolute inset-0 bottom-7"
               style={{
                 clipPath: "polygon(0% 0%, 100% 0%, 70% 100%, 30% 100%)",
                 background:
-                  "linear-gradient(180deg, #EEF1F6 0%, rgba(173, 196, 247, 0) 100%)",
+                  "linear-gradient(180deg, #d9dee6 0%, rgba(173, 196, 247, 0) 100%)",
               }}
             />
             <Image
