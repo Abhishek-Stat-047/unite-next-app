@@ -29,7 +29,7 @@ const companyLogos = [
 ];
 const TrustedCompanies = () => {
   return (
-    <div className="mt-24">
+    <div className="">
       <Heading
         description={`From eCommerce brands to SaaS platforms, Unite powers \n reliable and fast data pipelines across industries.`}
         heading={headingSegments}

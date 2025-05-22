@@ -140,9 +140,24 @@ const config = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        "marquee-left": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": {
+            transform: "translateX(0%)",
+          },
+        },
+
+        "marquee-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
       },
       animation: {
         marquee: "marquee 30s linear infinite",
+        "marquee-left": "marquee-left 10s linear infinite;",
+        "marquee-right": "marquee-right 10s linear infinite;",
       },
     },
   },

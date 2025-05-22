@@ -41,9 +41,11 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class" }}>
-          <AppNavbar />
+          <div className="fixed top-0 z-50 w-full">
+            <AppNavbar />
+          </div>
           <div className="relative flex flex-col h-screen">
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+            <main className="container mx-auto max-w-screen-2xl pt-16 px-6 md:px-14 flex-grow mt-20">
               {children}
             </main>
           </div>

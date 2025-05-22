@@ -55,7 +55,7 @@ const dark = {
   baseStyles: "text-slate-800 dark:text-slate-200",
   variantStyles: {
     heading: "text-4xl font-extrabold leading-tight md:text-5xl", // main heading
-    heading2: "text-xl font-semibold leading-tight md:text-2xl tracking-[4px]", // Title
+    heading2: "text-xl font-semibold leading-tight md:text-2xl", // Title
     subheading: "font-semibold leading-snug text-base", // sub heading
     "text-semibold": "font-semibold text-sm", // text
     text: "text-base text-gray-900", // text

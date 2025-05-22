@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { SVGProps } from "react";
 
 export type IconSvgProps = SVGProps<SVGSVGElement> & {
@@ -14,4 +15,9 @@ export type ETLFeatureType = {
   alt: string;
   heading: string;
   description: string;
+};
+
+export type ImageType = {
+  src: string | StaticImageData;
+  alt: string;
 };

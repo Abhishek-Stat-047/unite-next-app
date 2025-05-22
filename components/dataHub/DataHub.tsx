@@ -88,7 +88,7 @@ const DataHub = () => {
         {/* Center logo */}
         <Image
           alt="Unite database"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 bg-[#eff2f7] p-1 "
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-[#eff2f7] p-1 "
           height={141}
           src={UniteDb}
           width={117}

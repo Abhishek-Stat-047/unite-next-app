@@ -4,13 +4,10 @@ import logo from "./assets/icons/logo.svg";
 // bannerIcons/index.ts
 import UniteDb from "./assets/bannerIcons/uniteDB.svg";
 import AzureSql from "./assets/bannerIcons/azureSql.svg";
-import GoogleAds from "./assets/bannerIcons/googleAds.png";
-import GoogleAnalytics from "./assets/bannerIcons/googleAnalytics.svg";
 import GoogleBigQuery from "./assets/bannerIcons/googleBigQuery.svg";
 import HubSpot from "./assets/bannerIcons/hubSpot.png";
 import Meta from "./assets/bannerIcons/meta.png";
 import SalesForce from "./assets/bannerIcons/salesForce.svg";
-import SnowFlake from "./assets/bannerIcons/snowFlake.png";
 import Background from "./assets/bannerIcons/background.png";
 
 // trusted companies
@@ -34,19 +31,40 @@ import TransformData from "@/public/assets/ETLFeatures/transformData.svg";
 // chip
 
 import OurFeatureIcon from "@/public/assets/chip/ourFeature.svg";
+import ExploreIcon from "@/public/assets/chip/explore.svg";
+import Process from "@/public/assets/chip/process.svg";
+import FAQ from "@/public/assets/chip/faq.svg";
+
+// data sources icons
+
+import AmazonAds from "@/public/assets/ETLSources/amazonAds.png";
+import BigQuery from "@/public/assets/ETLSources/bigQuery.svg";
+import Bing from "@/public/assets/ETLSources/bing.png";
+import Facebook from "@/public/assets/ETLSources/facebook.svg";
+import GoogleAds from "@/public/assets/ETLSources/googleAds.png";
+import GoogleAnalytics from "@/public/assets/ETLSources/googleAnalytics.png";
+import GoogleCloud from "@/public/assets/ETLSources/googleCloud.png";
+import Hubspot from "@/public/assets/ETLSources/hubspot.svg";
+import Instagram from "@/public/assets/ETLSources/instagram.svg";
+import Jira from "@/public/assets/ETLSources/jira.png";
+import LinkedIn from "@/public/assets/ETLSources/linkedIn.svg";
+import Paypal from "@/public/assets/ETLSources/paypal.png";
+import QuickBooks from "@/public/assets/ETLSources/quickBooks.png";
+import Shopify from "@/public/assets/ETLSources/shopify.svg";
+import SnowFlake from "@/public/assets/ETLSources/snowFlake.png";
+import Stripe from "@/public/assets/ETLSources/stripe.png";
+import TikTok from "@/public/assets/ETLSources/tiktok.png";
+import Twitter from "@/public/assets/ETLSources/twitter.svg";
 
 export {
   logoText,
   logo,
   UniteDb,
   AzureSql,
-  GoogleAds,
-  GoogleAnalytics,
   GoogleBigQuery,
   HubSpot,
   Meta,
   SalesForce,
-  SnowFlake,
   Background,
   AllRound,
   BaneDigital,
@@ -63,5 +81,30 @@ export {
   NoCodeETL,
   ScheduledWorkFlow,
   TransformData,
+
+  // action chip
   OurFeatureIcon,
+  ExploreIcon,
+  Process,
+  FAQ,
+
+  // data sources icons
+  BigQuery,
+  Bing,
+  Facebook,
+  GoogleAds,
+  GoogleAnalytics,
+  GoogleCloud,
+  Hubspot,
+  Instagram,
+  Jira,
+  LinkedIn,
+  Paypal,
+  QuickBooks,
+  Shopify,
+  SnowFlake,
+  Stripe,
+  TikTok,
+  Twitter,
+  AmazonAds,
 };

@@ -2,7 +2,6 @@
 import { useState } from "react";
 import {
   Navbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenu,
@@ -28,12 +27,11 @@ export default function AppNavbar() {
       maxWidth="full"
       onMenuOpenChange={setIsMenuOpen}
     >
-      <NavbarBrand>
+      <div className="md:ml-10">
         <Logo />
-      </NavbarBrand>
-
+      </div>
       {/* Desktop Navigation */}
-      <NavbarContent className="hidden md:flex gap-8" justify="start">
+      <NavbarContent className="hidden md:flex gap-8 ml-16" justify="start">
         <NavbarItem>
           <LinkButton href="/integrations">Integrations</LinkButton>
         </NavbarItem>

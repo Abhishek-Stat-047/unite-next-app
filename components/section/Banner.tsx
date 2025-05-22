@@ -11,7 +11,7 @@ import { Background } from "@/public";
 const Banner = () => {
   return (
     <div className="">
-      <Image alt="back" className="absolute right-0 -top-32" src={Background} />
+      <Image alt="back" className="absolute right-0 -top-20" src={Background} />
       <div className="w-full  flex justify-between">
         <div className="z-10 mt-20">
           <ColoredText
@@ -42,7 +42,7 @@ const Banner = () => {
             No Credit Card Required! 🎉
           </Typography>
         </div>
-        <div className="">
+        <div className="mr-20">
           <DataHub />
         </div>
       </div>

@@ -19,10 +19,9 @@ const headingSegments = [
 ];
 const ETLFeature = () => {
   return (
-    <div className="py-14">
+    <div className="md:px-16">
       <ActionChip
         alt="ETL features icons"
-        className="mb-10"
         iconSrc={OurFeatureIcon}
         label="Our Features"
       />
