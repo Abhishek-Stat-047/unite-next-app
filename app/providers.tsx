@@ -28,7 +28,6 @@ export function Providers({ children, themeProps }: ProvidersProps) {
       <NextThemesProvider defaultTheme="light" {...themeProps}>
         {children}
       </NextThemesProvider>
-      {/* {children} */}
     </HeroUIProvider>
   );
 }

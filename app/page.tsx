@@ -1,4 +1,5 @@
-"use client";
+
+
 
 import Banner from "@/components/section/Banner";
 
@@ -8,4 +9,3 @@ export default function Home() {
       <Banner />
     </main>
   );
-}
