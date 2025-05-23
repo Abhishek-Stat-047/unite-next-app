@@ -17,6 +17,8 @@ import BoringMarketing from "@/public/assets/trustedCompanies/boringMarketing.sv
 import ECD from "@/public/assets/trustedCompanies/ecd.svg";
 import StoryTerrace from "@/public/assets/trustedCompanies/storyTerrace.png";
 import Trendify from "@/public/assets/trustedCompanies/trendify.png";
+import Enpal from "@/public/assets/trustedCompanies/Enpal.svg";
+import DigitalSisco from "@/public/assets/trustedCompanies/DigitalSisco.svg";
 
 // ETL Features
 import CustomFieldSelection from "@/public/assets/ETLFeatures/customFieldSelection.svg";
@@ -56,6 +58,23 @@ import Stripe from "@/public/assets/ETLSources/stripe.png";
 import TikTok from "@/public/assets/ETLSources/tiktok.png";
 import Twitter from "@/public/assets/ETLSources/twitter.svg";
 
+// Etl process works
+import ConfigurePipeline from "@/public/assets/ETLProcess/configurePipeline.svg";
+import ConnectDataSource from "@/public/assets/ETLProcess/connectDataSource.png";
+import SendToDestination from "@/public/assets/ETLProcess/sendToDestination.svg";
+
+// Etl Destination
+import amazonS3 from "@/public/assets/ETLDestination/amazonS3.svg";
+import mongoDB from "@/public/assets/ETLDestination/mongoDB.svg";
+import mysql from "@/public/assets/ETLDestination/mysql.svg";
+import postgresql from "@/public/assets/ETLDestination/postgresql.svg";
+import redshift from "@/public/assets/ETLDestination/redshift.svg";
+import azure from "@/public/assets/ETLDestination/azure.svg";
+import googleStorage from "@/public/assets/ETLDestination/googleStorage.svg";
+import looker from "@/public/assets/ETLDestination/looker.svg";
+// import googleSheets from "@/public/assets/ETLDestination/googleSheets.svg";
+import microsoftSqlServer from "@/public/assets/ETLDestination/microsoftSqlServer.png";
+
 export {
   logoText,
   logo,
@@ -66,12 +85,17 @@ export {
   Meta,
   SalesForce,
   Background,
+
+  // trusted companies
   AllRound,
   BaneDigital,
   BoringMarketing,
   ECD,
   StoryTerrace,
   Trendify,
+  DigitalSisco,
+  Enpal,
+
   // etl feature
   CustomFieldSelection,
   MultiDestinationSupport,
@@ -107,4 +131,21 @@ export {
   TikTok,
   Twitter,
   AmazonAds,
+
+  // Etl process works
+  ConfigurePipeline,
+  ConnectDataSource,
+  SendToDestination,
+
+  // Etl destination
+  amazonS3,
+  mongoDB,
+  mysql,
+  postgresql,
+  redshift,
+  azure,
+  googleStorage,
+  looker,
+  // googleSheets,
+  microsoftSqlServer,
 };

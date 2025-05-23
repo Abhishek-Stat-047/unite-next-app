@@ -1,23 +1,18 @@
 import React from "react";
 
 import Heading from "../common/Heading";
-import DataCardMarquee from "../animation/DataCardMarquee";
 import ActionChip from "../common/ActionChip";
 import Typography from "../common/Typography";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import TogglingMarquees from "../animation/TogglingMarquees";
+import AnimatedHeading from "../animation/AnimatedHeading";
 
-import {
-  DataSourcesOne,
-  DataSourcesThree,
-  DataSourcesTwo,
-} from "@/utils/constants";
 import { ExploreIcon } from "@/public";
 const headingSegments = [
   {
     text: "Explore Our Popular Data \n",
     color: "black",
   },
-  { text: " Sources ", color: "text-secondaryBlue-300" },
 ];
 
 const PopularDataSource = () => {
@@ -28,19 +23,13 @@ const PopularDataSource = () => {
         iconSrc={ExploreIcon}
         label="Explore"
       />
+      <Heading heading={headingSegments} />
+      <AnimatedHeading />
       <Heading
         description={`Unite integrates with 100+ data sources across advertising, analytics, CRM, eCommerce, and finance — with new connectors added monthly.`}
-        heading={headingSegments}
       />
-      <div className="center  space-y-7 py-16 ">
-        <div className="w-[80%] center">
-          <DataCardMarquee data={DataSourcesOne} />
-        </div>
-        <DataCardMarquee data={DataSourcesTwo} direction="right" />
-        <div className="w-[80%] center">
-          <DataCardMarquee data={DataSourcesThree} />
-        </div>
-      </div>
+      <TogglingMarquees />
+
       <div className="center">
         <Typography variant="heading2">
           Looking for a specific integration?

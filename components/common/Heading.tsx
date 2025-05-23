@@ -6,7 +6,7 @@ import Typography from "./Typography";
 import { HeadingSegments } from "@/types";
 
 interface HeadingProps {
-  heading: HeadingSegments[];
+  heading?: HeadingSegments[];
   description?: string;
   className?: string;
   headingClassName?: string;
@@ -31,15 +31,17 @@ const Heading = ({
         className
       )}
     >
-      <ColoredText
-        className={clx(
-          "!mb-4   md:whitespace-pre-line",
-          alignLeft ? "!text-left" : "!text-center md:text-left",
-          headingClassName
-        )}
-        segments={heading}
-        variant="heading"
-      />
+      {heading && (
+        <ColoredText
+          className={clx(
+            "!mb-4   md:whitespace-pre-line",
+            alignLeft ? "!text-left" : "!text-center md:text-left",
+            headingClassName
+          )}
+          segments={heading}
+          variant="heading"
+        />
+      )}
       <div
         className={clx(
           alignLeft ? "w-full ml-0 mr-0" : "md:w-[94%] mx-auto",

@@ -21,3 +21,12 @@ export type ImageType = {
   src: string | StaticImageData;
   alt: string;
 };
+
+export interface FAQAccordionTypes {
+  heading: HeadingSegments[];
+  description: string;
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+}

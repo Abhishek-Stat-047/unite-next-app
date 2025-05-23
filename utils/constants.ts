@@ -24,6 +24,26 @@ import {
   Shopify,
   Twitter,
   AmazonAds,
+  AllRound,
+  BaneDigital,
+  BoringMarketing,
+  DigitalSisco,
+  ECD,
+  Enpal,
+  StoryTerrace,
+  Trendify,
+  ConfigurePipeline,
+  ConnectDataSource,
+  SendToDestination,
+  amazonS3,
+  azure,
+  mongoDB,
+  mysql,
+  redshift,
+  googleStorage,
+  SalesForce,
+  looker,
+  microsoftSqlServer,
 } from "@/public";
 import { ETLFeatureType, ImageType } from "@/types";
 
@@ -299,5 +319,247 @@ export const DataSourcesThree: DataSourceType[] = [
     alt: "Shopify E-commerce Platform Integration Icon",
     name: "Shopify",
     src: Shopify,
+  },
+];
+
+export const DataDestinationOne: DataSourceType[] = [
+  {
+    alt: "Sales force integration icon",
+    name: "Sales force",
+    src: SalesForce,
+  },
+
+  {
+    alt: "Google Analytics Platform Icon",
+    name: "Google Analytics",
+    src: GoogleAnalytics,
+  },
+
+  {
+    alt: "MySQL Relational Database Integration Icon",
+    name: "MySQL",
+    src: mysql,
+  },
+
+  {
+    alt: "Snowflake Cloud Data Warehouse Icon",
+    name: "Snowflake",
+    src: SnowFlake,
+  },
+  {
+    alt: "Amazon S3 Cloud Storage Integration Icon",
+    name: "Amazon S3",
+    src: amazonS3,
+  },
+  {
+    alt: "Microsoft Azure Cloud Integration Icon",
+    name: "Azure",
+    src: azure,
+  },
+  {
+    alt: "Google Cloud Storage Integration Icon",
+    name: "Google Storage",
+    src: googleStorage,
+  },
+  {
+    alt: "MongoDB NoSQL Database Integration Icon",
+    name: "MongoDB",
+    src: mongoDB,
+  },
+
+  {
+    alt: "PostgreSQL Open-Source Database Integration Icon",
+    name: "PostgreSQL",
+    src: looker,
+  },
+  {
+    alt: "Amazon Redshift Data Warehouse Integration Icon",
+    name: "Redshift",
+    src: redshift,
+  },
+  // {
+  //   alt: "googleSheets icon",
+  //   name: "googleSheets",
+  //   src: googleSheets,
+  // },
+  {
+    alt: "microsoft Sql Server icon",
+    name: "microsoftSqlServer ",
+    src: microsoftSqlServer,
+  },
+];
+export const DataDestinationTwo: DataSourceType[] = [
+  {
+    alt: "Microsoft Azure Cloud Integration Icon",
+    name: "Azure",
+    src: azure,
+  },
+  {
+    alt: "MongoDB NoSQL Database Integration Icon",
+    name: "MongoDB",
+    src: mongoDB,
+  },
+  {
+    alt: "Sales force integration icon",
+    name: "Sales force",
+    src: SalesForce,
+  },
+  {
+    alt: "Amazon Redshift Data Warehouse Integration Icon",
+    name: "Redshift",
+    src: redshift,
+  },
+  {
+    alt: "Snowflake Cloud Data Warehouse Icon",
+    name: "Snowflake",
+    src: SnowFlake,
+  },
+  {
+    alt: "Microsoft Sql Server icon",
+    name: "microsoftSqlServer ",
+    src: microsoftSqlServer,
+  },
+  {
+    alt: "Google Cloud Storage Integration Icon",
+    name: "Google Storage",
+    src: googleStorage,
+  },
+  {
+    alt: "Google Analytics Platform Icon",
+    name: "Google Analytics",
+    src: GoogleAnalytics,
+  },
+  {
+    alt: "PostgreSQL Open-Source Database Integration Icon",
+    name: "PostgreSQL",
+    src: looker,
+  },
+  {
+    alt: "MySQL Relational Database Integration Icon",
+    name: "MySQL",
+    src: mysql,
+  },
+  {
+    alt: "Amazon S3 Cloud Storage Integration Icon",
+    name: "Amazon S3",
+    src: amazonS3,
+  },
+];
+export const DataDestinationThree: DataSourceType[] = [
+  {
+    alt: "PostgreSQL Open-Source Database Integration Icon",
+    name: "PostgreSQL",
+    src: looker,
+  },
+  {
+    alt: "Google Analytics Platform Icon",
+    name: "Google Analytics",
+    src: GoogleAnalytics,
+  },
+  {
+    alt: "Amazon S3 Cloud Storage Integration Icon",
+    name: "Amazon S3",
+    src: amazonS3,
+  },
+  {
+    alt: "Microsoft Azure Cloud Integration Icon",
+    name: "Azure",
+    src: azure,
+  },
+  {
+    alt: "Snowflake Cloud Data Warehouse Icon",
+    name: "Snowflake",
+    src: SnowFlake,
+  },
+  {
+    alt: "Sales force integration icon",
+    name: "Sales force",
+    src: SalesForce,
+  },
+  {
+    alt: "MongoDB NoSQL Database Integration Icon",
+    name: "MongoDB",
+    src: mongoDB,
+  },
+  {
+    alt: "Amazon Redshift Data Warehouse Integration Icon",
+    name: "Redshift",
+    src: redshift,
+  },
+  {
+    alt: "MySQL Relational Database Integration Icon",
+    name: "MySQL",
+    src: mysql,
+  },
+  {
+    alt: "microsoft Sql Server icon",
+    name: "microsoftSqlServer ",
+    src: microsoftSqlServer,
+  },
+  {
+    alt: "Google Cloud Storage Integration Icon",
+    name: "Google Storage",
+    src: googleStorage,
+  },
+];
+
+export const trustedCompanyLogos = [
+  { src: AllRound, alt: "AllRound logo" },
+  { src: BaneDigital, alt: "BaneDigital logo" },
+  { src: BoringMarketing, alt: "BoringMarketing logo" },
+  { src: ECD, alt: "ECD logo" },
+  { src: StoryTerrace, alt: "StoryTerrace logo" },
+  { src: Trendify, alt: "Trendify logo" },
+  { src: DigitalSisco, alt: "DigitalSisco logo" },
+  { src: Enpal, alt: "Enpal logo" },
+];
+
+export const ETLProcess = [
+  {
+    src: ConnectDataSource,
+
+    heading: "1. Connect Data Sources",
+    description:
+      "Authenticate and connect with 100+ platforms like Google Ads, Facebook, HubSpot, Shopify and more – no API knowledge needed.",
+    alt: "Illustration showing a user connecting various cloud-based data sources like Google Ads, Facebook, and HubSpot to a central system for data integration.",
+  },
+  {
+    src: ConfigurePipeline,
+
+    heading: "2. Configure Your Pipeline",
+    description:
+      "Select metrics and dimensions, apply filters, and set data sync frequency – all through our visual no-code interface.",
+    alt: "Diagram depicting a user configuring a data pipeline with a no-code interface, selecting metrics, applying filters, and setting data sync frequency for data transformation.",
+  },
+  {
+    src: SendToDestination,
+    heading: "3. Send Data to Destination",
+    description:
+      "Unite delivers a clean, structured data to your preferred destination - like Google BigQuery, Looker Studio, Google Sheets, Redshift, Snowflake, etc. in minutes.",
+    alt: "Image showing structured data being sent from a computer to various data destinations such as Google BigQuery, Looker Studio, and Snowflake for analytics and reporting.",
+  },
+];
+
+export const LandingPageFaq = [
+  {
+    question: "Do I need to have coding skills to use Unite?",
+    answer:
+      "Nope. Our platform offers a visual pipeline builder for no-code users, but also supports SQL and Python for advanced customizations — ideal for both analysts and engineers.",
+  },
+  {
+    question:
+      "I couldn't find a particular data connector in Unite, what do I do?",
+    answer:
+      "Nope. Our platform offers a visual pipeline builder for no-code users, but also supports SQL and Python for advanced customizations — ideal for both analysts and engineers.",
+  },
+  {
+    question: "What data warehouses does Unite support?",
+    answer:
+      "Nope. Our platform offers a visual pipeline builder for no-code users, but also supports SQL and Python for advanced customizations — ideal for both analysts and engineers.",
+  },
+  {
+    question: "What makes Unite better than other ETL tools in the market?",
+    answer:
+      "Nope. Our platform offers a visual pipeline builder for no-code users, but also supports SQL and Python for advanced customizations — ideal for both analysts and engineers.",
   },
 ];
